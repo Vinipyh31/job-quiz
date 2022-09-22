@@ -1,0 +1,51 @@
+.Result {
+    margin: 130px auto 90px;
+    max-width: 750px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 59px;
+    }
+
+    .jobs__container {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+
+        .job {
+            position: relative;
+            width: 342px;
+            height: 150px;
+            // border: 1px solid black
+            margin-bottom: 53px;
+
+            .title {
+
+                font-size: 18px;
+                margin-bottom: 8px;
+                display: flex;
+                letter-spacing: -0.03em;
+                line-height: 22px;
+
+                .score {
+                    font-size: 20px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                }
+
+            }
+
+            .description {
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(11, 31, 51, 0.74);
+                margin-bottom: 16px;
+            }
+
+        }
+    }
+
+}

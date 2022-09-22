@@ -1,0 +1,30 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background: #fff;
+  padding: 70px 10px;
+
+  &.result {
+    height: auto;
+  }
+
+  .quiz {
+    display: block;
+    width: 1058px;
+    height: 521px;
+    margin: auto;
+    box-shadow: 2px 2px 50px -18px rgba(0, 28, 88, 0.17);
+    border-radius: 40px;
+
+    &.result {
+      min-height: 521px;
+      height: auto;
+    }
+  }
+
+}

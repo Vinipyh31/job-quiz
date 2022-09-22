@@ -1,0 +1,68 @@
+.Hello {
+    display: block;
+    width: 692px;
+    height: 100%;
+    margin: 0 auto;
+
+
+    .Hello__container {
+        z-index: 2;
+        position: relative;
+        top: -90px;
+        display: flex;
+        margin: 0 auto;
+        padding: 15px 20px;
+        width: 208px;
+        height: 76px;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 2px 2px 42px rgba(77, 131, 250, 0.09);
+        backdrop-filter: blur(10px);
+
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+
+        h1 {
+            display: block;
+            font-size: 45px;
+
+            &.blue {
+                color: #0060F0;
+                font-weight: 700;
+            }
+        }
+
+
+
+    }
+
+    .main__container {
+        margin: 26px 0px 71px;
+        position: relative;
+        display: block;
+        top: -100px;
+
+        p {
+            font-size: 26px;
+            margin: 0 0 36px ;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 21px;
+            margin-top: 10px;
+        }
+    }
+
+
+
+    img {
+        display: block;
+        position: relative;
+        width: 300px;
+        height: 159px;
+        top: -50px;
+        margin: 0 auto;
+    }
+
+}

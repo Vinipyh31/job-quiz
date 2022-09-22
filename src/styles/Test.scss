@@ -1,0 +1,37 @@
+.Test {
+    height: 100%;
+    max-width: 708px;
+    margin: 0 auto;
+    position: relative;
+    padding: 90px 0;
+
+    .question {
+        margin-bottom: 8px;
+
+
+        &-number {
+            margin: 0 0 21px;
+        }
+    }
+
+    .answers {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        &.big {
+            height: 150px;
+        }
+
+        .answer {
+            display: flex;
+            align-items: center;
+            margin-top: 17px;
+            font-size: 20px;
+
+            input[type=radio]{
+                margin-right: 18px;
+                border: 0px;
+            }
+        }
+    }
+}
