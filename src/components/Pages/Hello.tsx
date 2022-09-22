@@ -1,6 +1,5 @@
-import React from 'react';
-import '../../styles/Hello.scss';
 import arm from '../../images/Saly.png';
+import '../../styles/Hello.scss';
 import MyButton from '../UI/button/MyButton';
 
 type hello = {
@@ -11,7 +10,7 @@ const Hello = ({ setStartTest }: hello) => {
   return (
     <div className='Hello'>
       <div className='Hello__container'>
-        <img src={arm} />
+        <img src={arm} alt="hand with a pen"/>
         <div className='Hello__word'>
           <h1 className='blue'>Привет!</h1>
         </div>
