@@ -22,13 +22,8 @@ const Result = ({ jobs }: result) => {
               <div className='title'><span className='score'>{job.score} баллов — </span>{job.name}</div>
               <div className='description'><p>{job.description}</p></div>
               <MyButton
+                className='btn'
                 type='small'
-                style={{
-                  padding: "4px 20px",
-                  fontSize: "14px",
-                  position: "absolute",
-                  bottom: "0px",
-                }}
               >подробнее</MyButton>
             </div>
           )

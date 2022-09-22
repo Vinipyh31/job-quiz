@@ -18,6 +18,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+
         &.big {
             height: 150px;
         }
@@ -28,10 +29,52 @@
             margin-top: 17px;
             font-size: 20px;
 
-            input[type=radio]{
+            input[type=radio] {
                 margin-right: 18px;
                 border: 0px;
             }
+        }
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 45px;
+    }
+}
+
+
+
+@media (max-width:663px) {
+    .Test {
+        padding: 46px 18px 26px 20px;
+
+        .answers {
+
+            &.big {
+                height: auto;
+            }
+
+            .answer {
+
+                input[type=radio] {
+                    margin-right: 18px;
+                    border: 0px;
+                }
+            }
+        }
+
+        .button__wrapper {
+            margin: 0 auto;
+            position: relative;
+            display: block;
+            width: 0px;
+            border: 3px solid black;
+            height: auto;
+        }
+
+        .btn {
+            position: static;
+            margin: 20px auto;
         }
     }
 }

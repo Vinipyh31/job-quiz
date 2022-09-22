@@ -16,7 +16,7 @@ const Test = ({ setEndTest, questions, jobs, setStartTest }: quiz) => {
     const [selectedAnswer, setSelectedAnswer] = useState<number>(0)
 
     useEffect(() => {
-        if (questions[questionNumber].answerOptions.length - 1  < selectedAnswer ) {
+        if (questions[questionNumber].answerOptions.length - 1 < selectedAnswer) {
             setSelectedAnswer(0);
         }
     }, [questions[questionNumber].answerOptions.length])
@@ -64,11 +64,8 @@ const Test = ({ setEndTest, questions, jobs, setStartTest }: quiz) => {
                 })}
             </div>
             <MyButton
+                className="btn"
                 type='small'
-                style={{
-                    position: 'absolute',
-                    bottom: "45px",
-                }}
                 onClick={buttonClick}
             >далее
             </MyButton>

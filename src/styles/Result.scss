@@ -45,7 +45,46 @@
                 margin-bottom: 16px;
             }
 
+            .btn {
+                padding: 4px 20px;
+                font-size: 14px;
+                position: absolute;
+                bottom: 0px;
+            }
+
         }
+    }
+
+}
+
+@media (max-width:663px) {
+
+    .Result {
+        padding: 57px 16px 0 24px;
+        margin: 0;
+
+        h2 {}
+
+        .jobs__container {
+
+            .job {
+
+                .title {
+
+                    .score {}
+
+                }
+
+                .description {}
+
+                .btn {
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+
+            }
+        }
+
     }
 
 }
