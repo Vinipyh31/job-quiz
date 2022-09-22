@@ -3,7 +3,7 @@
     max-width: 708px;
     margin: 0 auto;
     position: relative;
-    padding: 90px 0;
+    padding: 90px 0 52px;
 
     .question {
         margin-bottom: 8px;
@@ -37,8 +37,9 @@
     }
 
     .btn {
-        position: absolute;
-        bottom: 45px;
+        margin-top: 20px;
+        // position: absolute;
+        // bottom: 45px;
     }
 }
 

@@ -1,6 +1,6 @@
-import React, { MutableRefObject } from 'react'
-import { IJob, IQuestion } from '../../types/types';
+import { MutableRefObject } from 'react';
 import '../../styles/Result.scss';
+import { IJob } from '../../types/types';
 import MyButton from '../UI/button/MyButton';
 
 
