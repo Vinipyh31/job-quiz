@@ -12,7 +12,6 @@ function App() {
   const [endTest, setEndTest] = useState(false);
   const [questions, setQuestions] = useState<IQuestion[]>();
   const [isLoading, setIsLoading] = useState(true)
-  //const jobs = useRef<IJob[]>([])
   const [jobs, setJobs] = useState<IJob[]>([])
 
   async function getData() {
