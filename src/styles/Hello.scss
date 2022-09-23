@@ -5,6 +5,7 @@
     height: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    background: #fff;
 
 
     .Hello__container {
@@ -12,7 +13,7 @@
         position: relative;
         width: 300px;
         height: 60px;
-        margin: 0 auto 26px;
+        margin: 75px auto 26px;
 
         img {
             position: absolute;
@@ -63,6 +64,11 @@
             font-size: 21px;
             margin-top: 10px;
         }
+
+        .btn {
+            position: relative;
+        }
+
     }
 
 

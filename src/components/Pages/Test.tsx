@@ -1,4 +1,4 @@
-import { MutableRefObject, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../../styles/Test.scss';
 import { IJob, IQuestion } from '../../types/types';
 import MyButton from '../UI/button/MyButton';
@@ -7,7 +7,7 @@ type quiz = {
     setEndTest: (flag: boolean) => void;
     setStartTest: (flag: boolean) => void;
     questions: IQuestion[];
-    jobs: MutableRefObject<IJob[]>;
+    jobs: IJob[];
 }
 
 const Test = ({ setEndTest, questions, jobs, setStartTest }: quiz) => {
@@ -19,16 +19,14 @@ const Test = ({ setEndTest, questions, jobs, setStartTest }: quiz) => {
         if (questions[questionNumber].answerOptions.length - 1 < selectedAnswer) {
             setSelectedAnswer(0);
         }
-    }, [questions[questionNumber].answerOptions.length])
+    }, [questionNumber, questions, selectedAnswer])
 
 
 
 
     function buttonClick() {
         const answer = questions[questionNumber].answerOptions[selectedAnswer]
-        const list = jobs
-            .current
-            .filter((job) => answer.incById.includes(job.id))
+        jobs.filter((job) => answer.incById.includes(job.id))
             .forEach((job) => { job.score = job.score + 1 });
 
         if (questionNumber === questions.length - 1) {
