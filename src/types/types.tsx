@@ -16,4 +16,5 @@ export interface IJob {
     name: string;
     description: string;
     score: number;
+    more: string;
 }

@@ -24,6 +24,7 @@ const Result = ({ jobs }: result) => {
               <MyButton
                 className='btn'
                 type='small'
+                onClick={() => { window.open(job.more); }}
               >подробнее</MyButton>
             </div>
           )
