@@ -3,14 +3,14 @@ import '../../styles/Test.scss';
 import { IJob, IQuestion } from '../../types/types';
 import MyButton from '../UI/button/MyButton';
 
-type quiz = {
+type QuizPageProps = {
     setEndTest: (flag: boolean) => void;
     setStartTest: (flag: boolean) => void;
     questions: IQuestion[];
     jobs: IJob[];
 }
 
-const Quiz = ({ setEndTest, questions, jobs, setStartTest }: quiz) => {
+const Quiz = ({ setEndTest, questions, jobs, setStartTest }: QuizPageProps) => {
 
     const [questionNumber, setQuestionNumber] = useState<number>(0);
     const [selectedAnswer, setSelectedAnswer] = useState<number>(0)
