@@ -10,7 +10,7 @@ type quiz = {
     jobs: IJob[];
 }
 
-const Test = ({ setEndTest, questions, jobs, setStartTest }: quiz) => {
+const Quiz = ({ setEndTest, questions, jobs, setStartTest }: quiz) => {
 
     const [questionNumber, setQuestionNumber] = useState<number>(0);
     const [selectedAnswer, setSelectedAnswer] = useState<number>(0)
@@ -71,4 +71,4 @@ const Test = ({ setEndTest, questions, jobs, setStartTest }: quiz) => {
     )
 }
 
-export default Test
+export default Quiz
